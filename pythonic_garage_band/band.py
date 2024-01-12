@@ -5,16 +5,23 @@ class Musician:
   def __str__(self):
     return self.name
 
-class Band:
+class Band():
   members = []
   instances = []
 
 
-  def __init__(self, name, bands=None):
+  def __init__(self, name, members=None):
     self.instances.append(self)
-    self.members = bands or []
+    self.members.append(self)
+    self.members = members or []
     self.name = name
   
+  def __str__(self):
+    return f"We are {self.name}"
+
+  def __repr__(self):
+    return f"Band instance. Name ={self.name}"
+
   def name(self):
     return self.name
   
