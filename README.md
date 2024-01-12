@@ -20,6 +20,8 @@
 
 ### Setup
 
-- run `pytest in the console`
+- `pip install pytest`
 
 ### Tests
+
+- run `pytest in the console`
